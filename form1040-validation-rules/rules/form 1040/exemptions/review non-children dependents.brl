@@ -4,12 +4,15 @@
   <uuid>3426b1b8-d41f-41ad-bf6a-968777ece58f</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions
-	set relationships to { [dependent 1 relationship], [dependent 2 relationship], [dependent 3 relationship], [dependent 4 relationship] } ;
+	set relationships to 
+		{ [dependent 1 relationship], [dependent 2 relationship], [dependent 3 relationship], [dependent 4 relationship] } ;
 	set 'valid child relationship' to { "child", "son", "daughter" };
 if 
 	there is one string in relationships where
 		this string is not empty and 
 		this string is not one of 'valid child relationship' ,
 then
-	add warning "Confirm dependents can actually be claimed by payer" ;]]></definition>
+	add warning "Confirm dependents can actually be claimed by payer" ;
+	
+	]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
