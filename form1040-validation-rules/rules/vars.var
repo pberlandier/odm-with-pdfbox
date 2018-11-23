@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vars</name>
+  <uuid>bb19fe43-8c3d-4a1c-846d-23ee6a3997a8</uuid>
+  <variables name="form" type="org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm" initialValue="" verbalization="form"/>
+  <variables name="file" type="java.lang.String" initialValue="" verbalization="file"/>
+  <variables name="fields" type="java.util.Hashtable" initialValue="" verbalization="fields"/>
+</ilog.rules.studio.model.base:VariableSet>

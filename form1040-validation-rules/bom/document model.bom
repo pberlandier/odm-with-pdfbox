@@ -1,0 +1,21 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/form1040-validation-rules//form1040-validation-rules/lib/pdfbox-2.0.12.jar"
+property uuid "ed3d55dd-8811-4e46-a059-2cf6536cad1f"
+package org.apache.pdfbox.pdmodel;
+
+
+public class PDDocument
+        extends java.io.Closeable
+{
+    public readonly org.apache.pdfbox.pdmodel.PDDocumentCatalog documentCatalog;
+    public static org.apache.pdfbox.pdmodel.PDDocument load(java.io.File arg)
+                throws org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException, java.io.IOException;
+}
+
+public class PDDocumentCatalog
+        extends org.apache.pdfbox.pdmodel.common.COSObjectable
+{
+    public org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm acroForm;
+}
+

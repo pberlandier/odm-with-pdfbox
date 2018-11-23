@@ -1,0 +1,13 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/form1040-validation-rules/org.eclipse.jdt.launching.JRE_CONTAINER"
+property uuid "9da5a023-833e-467d-8f30-a79b29a8157f"
+package java.io;
+
+
+public class File
+        extends java.io.Serializable, java.lang.Comparable
+{
+    public File(string arg);
+}
+

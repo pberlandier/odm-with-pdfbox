@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.rule="http://ilog.rules.studio/model/rule.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" buildMode="DecisionEngine" isADecisionService="true" migrationFlag="3">
+  <name>form1040-validation-rules</name>
+  <uuid>46e1e237-96a8-4f8b-9878-d453bdf55fc6</uuid>
+  <outputLocation>output</outputLocation>
+  <categories>any</categories>
+  <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
+    <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY" exported="false"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="pdfbox-2.0.12.jar" url="platform:/form1040-validation-rules/lib/pdfbox-2.0.12.jar" exported="true"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="commons-logging-1.2.jar" url="platform:/form1040-validation-rules/lib/commons-logging-1.2.jar" exported="true"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="fontbox-2.0.12.jar" url="platform:/form1040-validation-rules/lib/fontbox-2.0.12.jar" exported="true"/>
+  </paths>
+  <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="form model" url="platform:/form1040-validation-rules/bom/form model.bom" origin="xom:/pdf-form-validation-rules//pdf-form-validation-rules/lib/pdfbox-2.0.12.jar"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="document model" url="platform:/form1040-validation-rules/bom/document model.bom" origin="xom:/form1040-validation-rules//form1040-validation-rules/lib/pdfbox-2.0.12.jar"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="java model" url="platform:/form1040-validation-rules/bom/java model.bom" origin="xom:/form1040-validation-rules/org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  </paths>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
+    <name>rules</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.bom:BOMFolder">
+    <name>bom</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.rule:TemplateFolder">
+    <name>templates</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.query:QueryFolder">
+    <name>queries</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:ResourceFolder">
+    <name>resources</name>
+  </modelFolders>
+  <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
+    <name>deployment</name>
+  </modelFolders>
+</ilog.rules.studio.model.base:RuleProject>

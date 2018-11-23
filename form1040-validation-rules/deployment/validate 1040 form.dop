@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="validate_1040_form" usingRuleflow="true" ruleflowName="form 1040 validation - form" targetRuleProjectName="form1040-validation-rules">
+  <name>validate 1040 form</name>
+  <uuid>fcc98166-27c9-45b9-bbca-ec2df0d4524e</uuid>
+  <referencedVariables variableName="form" variableSetName="vars">
+    <variableSet href="../rules/vars.var#bb19fe43-8c3d-4a1c-846d-23ee6a3997a8"/>
+  </referencedVariables>
+  <ruleflow href="../rules/form%201040%20validation%20-%20form.rfl#62b6e67a-a8dd-44b0-b170-21002cd3b5e5"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="validate 1040 form_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../form1040-validation-rules#46e1e237-96a8-4f8b-9878-d453bdf55fc6"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

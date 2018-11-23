@@ -1,0 +1,277 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/pdf-form-validation-rules//pdf-form-validation-rules/lib/pdfbox-2.0.12.jar"
+property uuid "b5029e94-c376-4ce8-ad19-90c60e7120b2"
+package org.apache.pdfbox.pdmodel.interactive.form;
+
+
+public final class PDAcroForm
+        extends org.apache.pdfbox.pdmodel.common.COSObjectable
+{
+    public readonly java.util.Iterator fieldIterator;
+    public readonly org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree fieldTree;
+    public java.util.List fields domain 0,* class org.apache.pdfbox.pdmodel.interactive.form.PDField;
+    public boolean signaturesExist;
+    public void flatten(java.util.List arg1 domain 0,* class org.apache.pdfbox.pdmodel.interactive.form.PDField, 
+        boolean arg2)
+                throws java.io.IOException;
+    public void flatten()
+                throws java.io.IOException;
+    public org.apache.pdfbox.pdmodel.interactive.form.PDField getField(string arg);
+}
+
+public abstract class PDButton
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField
+{
+    public string defaultValue;
+    public java.util.List exportValues domain 0,* class string;
+    public readonly java.util.Set onValues domain 0,* class string;
+    public boolean pushButton;
+    public boolean radioButton;
+    public string value;
+    public readonly string valueAsString;
+    public PDButton(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+}
+
+public final class PDCheckBox
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDButton
+{
+    public readonly boolean checked;
+    public readonly string onValue;
+    public PDCheckBox(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public void check()
+                throws java.io.IOException;
+    public void unCheck()
+                throws java.io.IOException;
+}
+
+public abstract class PDChoice
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDVariableText
+{
+    public boolean combo;
+    public boolean commitOnSelChange;
+    public readonly java.util.List defaultValue domain 0,* class string;
+    public boolean doNotSpellCheck;
+    public boolean multiSelect;
+    public java.util.List options domain 0,* class string;
+    public readonly java.util.List optionsDisplayValues domain 0,* class string;
+    public readonly java.util.List optionsExportValues domain 0,* class string;
+    public java.util.List selectedOptionsIndex domain 0,* class java.lang.Integer;
+    public boolean sort;
+    public java.util.List value domain 0,* class string;
+    public readonly string valueAsString;
+    public PDChoice(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public void setDefaultValue(string arg)
+                throws java.io.IOException;
+    public void setOptions(java.util.List arg1 domain 0,* class string, 
+        java.util.List arg2 domain 0,* class string);
+    public void setValue(string arg)
+                throws java.io.IOException;
+}
+
+public final class PDComboBox
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDChoice
+{
+    public boolean edit;
+    public PDComboBox(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+}
+
+public class PDDefaultAppearanceString
+{
+}
+
+public abstract class PDField
+        extends org.apache.pdfbox.pdmodel.common.COSObjectable
+        property automaticVariable "true"
+{
+    public string alternateFieldName;
+    public abstract int fieldFlags;
+    public readonly abstract string fieldType;
+    public readonly string fullyQualifiedName;
+    public string mappingName;
+    public boolean noExport;
+    public readonly org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField parent;
+    public virtual.FieldName partialName;
+    public boolean readOnly;
+    public boolean required;
+    public writeonly abstract string value;
+    public readonly abstract string valueAsString;
+    public string toString();
+}
+
+public final class PDFieldFactory
+{
+}
+
+public class PDFieldTree
+        extends java.lang.Iterable
+{
+    public PDFieldTree(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public java.util.Iterator iterator();
+}
+
+public final class PDListBox
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDChoice
+{
+    public readonly int topIndex;
+    public PDListBox(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public void setTopIndex(java.lang.Integer arg);
+}
+
+public class PDNonTerminalField
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDField
+{
+    public java.util.List children domain 0,* class org.apache.pdfbox.pdmodel.interactive.form.PDField;
+    public readonly int fieldFlags;
+    public readonly string fieldType;
+    public readonly string valueAsString;
+    public PDNonTerminalField(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public void setValue(string arg)
+                throws java.io.IOException;
+}
+
+public class PDPushButton
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDButton
+{
+    public readonly string defaultValue;
+    public java.util.List exportValues domain 0,* class string;
+    public readonly string value;
+    public readonly string valueAsString;
+    public PDPushButton(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+}
+
+public final class PDRadioButton
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDButton
+{
+    public boolean radiosInUnison;
+    public readonly java.util.List selectedExportValues domain 0,* class string;
+    public PDRadioButton(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+}
+
+public class PDSignatureField
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField
+{
+    public readonly string valueAsString;
+    public PDSignatureField(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg)
+                throws java.io.IOException;
+    public void setValue(string arg)
+                throws java.lang.UnsupportedOperationException;
+}
+
+public abstract class PDTerminalField
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDField
+{
+    public readonly int fieldFlags;
+    public readonly string fieldType;
+}
+
+public final class PDTextField
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDVariableText
+{
+    public boolean comb;
+    public string defaultValue;
+    public writeonly boolean doNotScroll;
+    public writeonly boolean doNotSpellCheck;
+    public boolean fileSelect;
+    public int maxLen;
+    public boolean multiline;
+    public boolean password;
+    public boolean richText;
+    public string value;
+    public readonly string valueAsString;
+    public PDTextField(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm arg);
+    public boolean doNotScroll();
+    public boolean doNotSpellCheck();
+}
+
+public abstract class PDVariableText
+        extends org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField
+{
+    public static final readonly int QUADDING_CENTERED;
+    public static final readonly int QUADDING_LEFT;
+    public static final readonly int QUADDING_RIGHT;
+    public string defaultAppearance;
+    public string defaultStyleString;
+    public int q;
+    public string richTextValue;
+}
+
+public class PlainText
+{
+
+    static public class Line
+    {
+    }
+
+    static public class Paragraph
+    {
+    }
+
+    static public class Word
+    {
+    }
+}
+
+package virtual;
+
+
+public class FieldName
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "1"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en" "3"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property domainProviderResource "field-names.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain 
+    {
+        static FIRST_NAME,
+        static LAST_NAME,
+        static SPOUSE_FIRST_NAME,
+        static SPOUSE_LAST_NAME,
+        static SSN,
+        static JOINT_SSN,
+        static DEP_1,
+        static DEP_2,
+        static DEP_3,
+        static DEP_4,
+        static EXEMPTION_BOXES,
+        static WAGES,
+        static TAXABLE_INTEREST,
+        static EDUCATOR_EXPENSES,
+        static IRA_DEDUCTION,
+        static TOTAL_INCOME,
+        static AGI,
+        static OCCUPATION,
+        static SPOUSE_OCCUPATION
+    }
+    public static final readonly virtual.FieldName AGI;
+    public static final readonly virtual.FieldName DEP_1;
+    public static final readonly virtual.FieldName DEP_2;
+    public static final readonly virtual.FieldName DEP_3;
+    public static final readonly virtual.FieldName DEP_4;
+    public static final readonly virtual.FieldName EDUCATOR_EXPENSES;
+    public static final readonly virtual.FieldName EXEMPTION_BOXES;
+    public static final readonly virtual.FieldName FIRST_NAME;
+    public static final readonly virtual.FieldName IRA_DEDUCTION;
+    public static final readonly virtual.FieldName JOINT_SSN;
+    public static final readonly virtual.FieldName LAST_NAME;
+    public static final readonly virtual.FieldName OCCUPATION;
+    public static final readonly virtual.FieldName SPOUSE_FIRST_NAME;
+    public static final readonly virtual.FieldName SPOUSE_LAST_NAME;
+    public static final readonly virtual.FieldName SPOUSE_OCCUPATION;
+    public static final readonly virtual.FieldName SSN;
+    public static final readonly virtual.FieldName TAXABLE_INTEREST;
+    public static final readonly virtual.FieldName TOTAL_INCOME;
+    public static final readonly virtual.FieldName WAGES;
+}
+
+public class Util
+{
+    public static void addWarning(string warning);
+    public static java.lang.Integer dollarValue(virtual.FieldName fieldName);
+    public static string stringValue(virtual.FieldName fieldName);
+}
+

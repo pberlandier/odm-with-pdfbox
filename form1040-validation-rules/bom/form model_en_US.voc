@@ -1,0 +1,225 @@
+# Vocabulary Properties
+uuid = d54252e8-535b-4b41-93b8-c4ca321bc074
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm#concept.label = PDAcro form
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.fieldIterator#phrase.navigation = {field iterator} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.fieldTree#phrase.navigation = {field tree} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.fields#phrase.action = set the fields of {this} to {field}
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.fields#phrase.navigation = {field} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.signaturesExist#phrase.action = make it {signatures exist} that {this} is signatures exist
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.signaturesExist#phrase.navigation = {this} is signatures exist
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDButton
+org.apache.pdfbox.pdmodel.interactive.form.PDButton#concept.label = PDButton
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.defaultValue#phrase.action = set the default value of {this} to {default value}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.defaultValue#phrase.navigation = {default value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.exportValues#phrase.action = set the export values of {this} to {export value}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.exportValues#phrase.navigation = {export value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.onValues#phrase.navigation = {on value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.pushButton#phrase.action = make it {push button} that {this} is push button
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.pushButton#phrase.navigation = {this} is push button
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.radioButton#phrase.action = make it {radio button} that {this} is radio button
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.radioButton#phrase.navigation = {this} is radio button
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.value#phrase.action = set the value of {this} to {value}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.value#phrase.navigation = {value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDButton.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox
+org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox#concept.label = PDCheck box
+org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox.checked#phrase.navigation = {this} is checked
+org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox.onValue#phrase.navigation = {on value} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDChoice
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice#concept.label = PDChoice
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.combo#phrase.action = make it {combo} that {this} is combo
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.combo#phrase.navigation = {this} is combo
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.commitOnSelChange#phrase.action = make it {commit on sel change} that {this} is commit on sel change
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.commitOnSelChange#phrase.navigation = {this} is commit on sel change
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.defaultValue#phrase.navigation = {default value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.doNotSpellCheck#phrase.action = make it {do not spell check} that {this} is do not spell check
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.doNotSpellCheck#phrase.navigation = {this} is do not spell check
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.multiSelect#phrase.action = make it {multi select} that {this} is multi select
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.multiSelect#phrase.navigation = {this} is multi select
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.options#phrase.action = set the options of {this} to {option}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.options#phrase.navigation = {option} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.optionsDisplayValues#phrase.navigation = {options display value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.optionsExportValues#phrase.navigation = {options export value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.selectedOptionsIndex#phrase.action = set the selected options indexs of {this} to {selected options index}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.selectedOptionsIndex#phrase.navigation = {selected options index} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.setDefaultValue(java.lang.String)#phrase.action = set the default value of {this} to {0}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.setValue(java.lang.String)#phrase.action = set the value of {this} to {0}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.sort#phrase.action = make it {sort} that {this} is sort
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.sort#phrase.navigation = {this} is sort
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.value#phrase.action = set the values of {this} to {value}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.value#phrase.navigation = {value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDChoice.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDComboBox
+org.apache.pdfbox.pdmodel.interactive.form.PDComboBox#concept.label = PDCombo box
+org.apache.pdfbox.pdmodel.interactive.form.PDComboBox.edit#phrase.action = make it {edit} that {this} is edit
+org.apache.pdfbox.pdmodel.interactive.form.PDComboBox.edit#phrase.navigation = {this} is edit
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceString
+org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceString#concept.label = PDDefault appearance string
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDField
+org.apache.pdfbox.pdmodel.interactive.form.PDField#concept.label = PDField
+org.apache.pdfbox.pdmodel.interactive.form.PDField.alternateFieldName#phrase.action = set the alternate field name of {this} to {alternate field name}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.alternateFieldName#phrase.navigation = {alternate field name} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.fieldFlags#phrase.action = set the field flags of {this} to {field flags}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.fieldFlags#phrase.navigation = {field flags} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.fieldType#phrase.navigation = {field type} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.fullyQualifiedName#phrase.navigation = {fully qualified name} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.mappingName#phrase.action = set the mapping name of {this} to {mapping name}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.mappingName#phrase.navigation = {mapping name} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.noExport#phrase.action = make it {no export} that {this} is no export
+org.apache.pdfbox.pdmodel.interactive.form.PDField.noExport#phrase.navigation = {this} is no export
+org.apache.pdfbox.pdmodel.interactive.form.PDField.parent#phrase.navigation = {parent} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.partialName#phrase.navigation = {name} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDField.readOnly#phrase.action = make it {read only} that {this} is read only
+org.apache.pdfbox.pdmodel.interactive.form.PDField.readOnly#phrase.navigation = {this} is read only
+org.apache.pdfbox.pdmodel.interactive.form.PDField.required#phrase.action = make it {required} that {this} is required
+org.apache.pdfbox.pdmodel.interactive.form.PDField.required#phrase.navigation = {this} is required
+org.apache.pdfbox.pdmodel.interactive.form.PDField.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDFieldFactory
+org.apache.pdfbox.pdmodel.interactive.form.PDFieldFactory#concept.label = PDField factory
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree
+org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree#concept.label = PDField tree
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDListBox
+org.apache.pdfbox.pdmodel.interactive.form.PDListBox#concept.label = PDList box
+org.apache.pdfbox.pdmodel.interactive.form.PDListBox.setTopIndex(java.lang.Integer)#phrase.action = set the top index of {this} to {0}
+org.apache.pdfbox.pdmodel.interactive.form.PDListBox.topIndex#phrase.navigation = {top index} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField#concept.label = PDNon terminal field
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.children#phrase.action = set the childrens of {this} to {children}
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.children#phrase.navigation = {children} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.fieldFlags#phrase.navigation = {field flags} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.fieldType#phrase.navigation = {field type} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.setValue(java.lang.String)#phrase.action = set the value of {this} to {0}
+org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDPushButton
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton#concept.label = PDPush button
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton.defaultValue#phrase.navigation = {default value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton.exportValues#phrase.action = set the export values of {this} to {export value}
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton.exportValues#phrase.navigation = {export value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton.value#phrase.navigation = {value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDPushButton.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton
+org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton#concept.label = PDRadio button
+org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton.radiosInUnison#phrase.action = make it {radios in unison} that {this} is radios in unison
+org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton.radiosInUnison#phrase.navigation = {this} is radios in unison
+org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton.selectedExportValues#phrase.navigation = {selected export value} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField
+org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField#concept.label = PDSignature field
+org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField.setValue(java.lang.String)#phrase.action = set the value of {this} to {0}
+org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField
+org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField#concept.label = form field
+org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField.fieldFlags#phrase.navigation = {field flags} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField.fieldType#phrase.navigation = {field type} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDTextField
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField#concept.label = PDText field
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.comb#phrase.action = make it {comb} that {this} is comb
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.comb#phrase.navigation = {this} is comb
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.defaultValue#phrase.action = set the default value of {this} to {default value}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.defaultValue#phrase.navigation = {default value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.doNotScroll#phrase.action = make it {do not scroll} that {this} is do not scroll
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.doNotScroll()#phrase.navigation = {this} is do not scroll
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.doNotSpellCheck#phrase.action = make it {do not spell check} that {this} is do not spell check
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.doNotSpellCheck()#phrase.navigation = {this} is do not spell check
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.fileSelect#phrase.action = make it {file select} that {this} is file select
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.fileSelect#phrase.navigation = {this} is file select
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.maxLen#phrase.action = set the max len of {this} to {max len}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.maxLen#phrase.navigation = {max len} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.multiline#phrase.action = make it {multiline} that {this} is multiline
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.multiline#phrase.navigation = {this} is multiline
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.password#phrase.action = make it {password} that {this} is password
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.password#phrase.navigation = {this} is password
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.richText#phrase.action = make it {rich text} that {this} is rich text
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.richText#phrase.navigation = {this} is rich text
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.value#phrase.action = set the value of {this} to {value}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.value#phrase.navigation = {value} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDTextField.valueAsString#phrase.navigation = {value as string} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PDVariableText
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText#concept.label = PDVariable text
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.QUADDING_CENTERED#phrase.navigation = the QUADDING CENTERED
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.QUADDING_LEFT#phrase.navigation = the QUADDING LEFT
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.QUADDING_RIGHT#phrase.navigation = the QUADDING RIGHT
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.defaultAppearance#phrase.action = set the default appearance of {this} to {default appearance}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.defaultAppearance#phrase.navigation = {default appearance} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.defaultStyleString#phrase.action = set the default style string of {this} to {default style string}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.defaultStyleString#phrase.navigation = {default style string} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.q#phrase.action = set the q of {this} to {q}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.q#phrase.navigation = {q} of {this}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.richTextValue#phrase.action = set the rich text value of {this} to {rich text value}
+org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.richTextValue#phrase.navigation = {rich text value} of {this}
+
+# org.apache.pdfbox.pdmodel.interactive.form.PlainText
+org.apache.pdfbox.pdmodel.interactive.form.PlainText#concept.label = plain text
+
+# org.apache.pdfbox.pdmodel.interactive.form.PlainText.Line
+org.apache.pdfbox.pdmodel.interactive.form.PlainText.Line#concept.label = line
+
+# org.apache.pdfbox.pdmodel.interactive.form.PlainText.Paragraph
+org.apache.pdfbox.pdmodel.interactive.form.PlainText.Paragraph#concept.label = paragraph
+
+# org.apache.pdfbox.pdmodel.interactive.form.PlainText.Word
+org.apache.pdfbox.pdmodel.interactive.form.PlainText.Word#concept.label = word
+
+# virtual.FieldName
+virtual.FieldName#concept.label = virtual.FieldName
+virtual.FieldName.AGI#instance.documentation = AGI
+virtual.FieldName.AGI#instance.label = AGI
+virtual.FieldName.DEP_1#instance.documentation = dependent 1 relationship
+virtual.FieldName.DEP_1#instance.label = dependent 1 relationship
+virtual.FieldName.DEP_2#instance.documentation = dependent 2 relationship
+virtual.FieldName.DEP_2#instance.label = dependent 2 relationship
+virtual.FieldName.DEP_3#instance.documentation = dependent 3 relationship
+virtual.FieldName.DEP_3#instance.label = dependent 3 relationship
+virtual.FieldName.DEP_4#instance.documentation = dependent 4 relationship
+virtual.FieldName.DEP_4#instance.label = dependent 4 relationship
+virtual.FieldName.EDUCATOR_EXPENSES#instance.documentation = educator expenses
+virtual.FieldName.EDUCATOR_EXPENSES#instance.label = educator expenses
+virtual.FieldName.EXEMPTION_BOXES#instance.documentation = number of exemptions
+virtual.FieldName.EXEMPTION_BOXES#instance.label = number of dependents
+virtual.FieldName.FIRST_NAME#instance.documentation = first name
+virtual.FieldName.FIRST_NAME#instance.label = first name
+virtual.FieldName.IRA_DEDUCTION#instance.documentation = IRA deduction
+virtual.FieldName.IRA_DEDUCTION#instance.label = IRA deduction
+virtual.FieldName.JOINT_SSN#instance.documentation = spouse social security number 
+virtual.FieldName.JOINT_SSN#instance.label = spouse social security number 
+virtual.FieldName.LAST_NAME#instance.documentation = last name
+virtual.FieldName.LAST_NAME#instance.label = last name
+virtual.FieldName.OCCUPATION#instance.documentation = occupation
+virtual.FieldName.OCCUPATION#instance.label = occupation
+virtual.FieldName.SPOUSE_FIRST_NAME#instance.documentation = spouse first name 
+virtual.FieldName.SPOUSE_FIRST_NAME#instance.label = spouse first name 
+virtual.FieldName.SPOUSE_LAST_NAME#instance.documentation = spouse last name 
+virtual.FieldName.SPOUSE_LAST_NAME#instance.label = spouse last name 
+virtual.FieldName.SPOUSE_OCCUPATION#instance.documentation = spouse occupation
+virtual.FieldName.SPOUSE_OCCUPATION#instance.label = spouse occupation
+virtual.FieldName.SSN#instance.documentation = social security number
+virtual.FieldName.SSN#instance.label = social security number
+virtual.FieldName.TAXABLE_INTEREST#instance.documentation = taxable interest
+virtual.FieldName.TAXABLE_INTEREST#instance.label = taxable interest
+virtual.FieldName.TOTAL_INCOME#instance.documentation = total income
+virtual.FieldName.TOTAL_INCOME#instance.label = total income
+virtual.FieldName.WAGES#instance.documentation = wages
+virtual.FieldName.WAGES#instance.label = wages
+
+# virtual.Util
+virtual.Util#concept.label = util
+virtual.Util.addWarning(java.lang.String)#phrase.action = add warning {0}
+virtual.Util.dollarValue(virtual.FieldName)#phrase.navigation = $ {0}
+virtual.Util.stringValue(virtual.FieldName)#phrase.navigation = [{0}]

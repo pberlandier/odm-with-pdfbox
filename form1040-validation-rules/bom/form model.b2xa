@@ -1,0 +1,160 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>93f693a1-9f2f-4a67-b1a0-47d90eb87e91</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>virtual.FieldName</businessName>
+        <executionName>java.lang.String</executionName>
+        <attribute>
+            <name>AGI</name>
+            <getter language="irl"><![CDATA[
+            return "f1_107[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>DEP_1</name>
+            <getter language="irl"><![CDATA[
+            return "f1_20[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>DEP_2</name>
+            <getter language="irl"><![CDATA[
+            return "f1_23[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>DEP_3</name>
+            <getter language="irl"><![CDATA[
+            return "f1_26[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>DEP_4</name>
+            <getter language="irl"><![CDATA[
+            return "f1_29[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>EDUCATOR_EXPENSES</name>
+            <getter language="irl"><![CDATA[
+            return "f1_78[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>EXEMPTION_BOXES</name>
+            <getter language="irl"><![CDATA[
+            return "f1_34[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>FIRST_NAME</name>
+            <getter language="irl"><![CDATA[
+            return "f1_04[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>IRA_DEDUCTION</name>
+            <getter language="irl"><![CDATA[
+            return "f1_97[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>JOINT_SSN</name>
+            <getter language="irl"><![CDATA[
+            return "f1_09[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>LAST_NAME</name>
+            <getter language="irl"><![CDATA[
+            return "f1_05[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>OCCUPATION</name>
+            <getter language="irl"><![CDATA[
+            return "f2_97[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>SPOUSE_FIRST_NAME</name>
+            <getter language="irl"><![CDATA[
+            return "f1_07[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>SPOUSE_LAST_NAME</name>
+            <getter language="irl"><![CDATA[
+            return "f1_08[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>SPOUSE_OCCUPATION</name>
+            <getter language="irl"><![CDATA[
+            return "f2_99[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>SSN</name>
+            <getter language="irl"><![CDATA[
+            return "f1_06[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>TAXABLE_INTEREST</name>
+            <getter language="irl"><![CDATA[
+            return "f1_37[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>TOTAL_INCOME</name>
+            <getter language="irl"><![CDATA[
+            return "f1_76[0]";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>WAGES</name>
+            <getter language="irl"><![CDATA[
+            return "f1_35[0]";
+            ]]></getter>
+        </attribute>
+    </class>
+    <class>
+        <businessName>virtual.Util</businessName>
+        <executionName>java.lang.Object</executionName>
+        <import>org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField</import>
+        <method>
+            <name>addWarning</name>
+            <parameter type="java.lang.String"/>
+            <body language="arl"><![CDATA[
+            java.lang.System.out.println("Warning: " + warning);
+            ]]></body>
+        </method>
+        <method>
+            <name>dollarValue</name>
+            <parameter type="virtual.FieldName"/>
+            <body language="arl"><![CDATA[
+            PDTerminalField field = (PDTerminalField)fields.get(fieldName);
+if ( field == null ) {
+  	return null;
+}
+java.lang.String valueString = field.valueAsString.trim();
+if ( valueString.isEmpty() ) {
+	return 0;
+}
+return java.lang.Integer.valueOf(valueString);
+            ]]></body>
+        </method>
+        <method>
+            <name>stringValue</name>
+            <parameter type="virtual.FieldName"/>
+            <body language="arl"><![CDATA[
+            PDTerminalField field = (PDTerminalField)fields.get(fieldName);
+if ( field == null ) {
+  	return null;
+}
+return field.valueAsString.toLowerCase().trim();
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>form 1040 validation - form</name>
+  <uuid>62b6e67a-a8dd-44b0-b170-21002cd3b5e5</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_1"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="form 1040" Ordering="Default">
+        <InitialActions Language="bal"><![CDATA[print "Starting form validation.";]]></InitialActions>
+        <FinalActions Language="bal"><![CDATA[print "Form validation completed.";]]></FinalActions>
+        <RuleList>
+          <Package Name="form 1040"/>
+        </RuleList>
+      </RuleTask>
+      <ActionTask Identifier="initialize">
+        <Actions Language="irl"><![CDATA[org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree tree = form.fieldTree;]]>&#13;<![CDATA[
+java.util.Iterator iter = tree.iterator();]]>&#13;<![CDATA[
+int counter = 0;]]>&#13;<![CDATA[
+fields = new java.util.Hashtable();]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+while ( iter.hasNext() )]]>&#13;<![CDATA[
+{]]>&#13;<![CDATA[
+	org.apache.pdfbox.pdmodel.interactive.form.PDField field = (org.apache.pdfbox.pdmodel.interactive.form.PDField) iter.next();]]>&#13;<![CDATA[
+	counter = counter + 1;]]>&#13;<![CDATA[
+	insert field;]]>&#13;<![CDATA[
+	if ( field instanceof org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField ) {]]>&#13;<![CDATA[
+	  fields.put(field.partialName, field);]]>&#13;<![CDATA[
+	}]]>&#13;<![CDATA[
+}]]>&#13;<![CDATA[
+System.out.println("Found " + counter + " fields in the form tree.");]]></Actions>
+      </ActionTask>
+      <StopTask Identifier="task_2"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="form 1040"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_2" Task="task_2"/>
+      <TaskNode Identifier="node_3" Task="initialize"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_1" Target="node_3"/>
+      <Transition Identifier="transition_1" Source="node_3" Target="node_0"/>
+      <Transition Identifier="transition_2" Source="node_0" Target="node_2"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_2#height">22.0</Data>
+      <Data Name="node_1#height">21.0</Data>
+      <Data Name="node_3#height">40.0</Data>
+      <Data Name="node_0#height">53.402344</Data>
+      <Data Name="node_1#name">node_0</Data>
+      <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_3#width">102.0</Data>
+      <Data Name="node_1#width">21.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_2#width">22.0</Data>
+      <Data Name="node_0#width">102.0</Data>
+      <Data Name="node_3#y">90.0</Data>
+      <Data Name="node_0#x">51.0</Data>
+      <Data Name="node_0#y">187.70117</Data>
+      <Data Name="node_1#x">51.0</Data>
+      <Data Name="node_1#y">10.5</Data>
+      <Data Name="node_2#x">51.0</Data>
+      <Data Name="node_3#documentation">Insert all the fields from the form in the working memory.</Data>
+      <Data Name="node_3#name">node_3</Data>
+      <Data Name="node_2#y">275.40234</Data>
+      <Data Name="node_3#x">51.0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
